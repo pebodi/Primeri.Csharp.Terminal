@@ -3,13 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{377D3F5B-0E4D-4D06-A553-A8309236AF0B}</ProjectGuid>
+    <ProjectGuid>{80AE0CE3-56AE-482A-90A7-52E49D79D7CB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TableProject</RootNamespace>
-    <AssemblyName>TableProject</AssemblyName>
+    <RootNamespace>Modul03</RootNamespace>
+    <AssemblyName>Modul03</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
