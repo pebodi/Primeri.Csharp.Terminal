@@ -16,57 +16,71 @@ namespace BoolExplore2
 
 			//int _ui = Convert.ToInt32 (Console.ReadLine ());
 
-			bool _check01 = int.TryParse (_input, out _ui);
+			bool _check01 = int.TryParse (_input, out _ui );
+
+			try
+			{
+				Console.Write ( "Елемент " + _ui.ToString () + " от масива е: ");
+				Console.Writeline ( _i [ _ui - 1 ] );
+
+			}catch{
+				Console.WriteLine ("Недефиниран елемент");
+				
+			}
+
+			//Използване на условно присвояване
+
 
 //			_ui = ( _ui <= _i.Length ) ? _ui : 5;
 //			_ui = ( _ui > 0 ) ? _ui : 1;
-
-			switch ( _ui ) {
-
-			case 1:
-				{
-					Console.Write ("Първи елемент в масива: ");
-					Console.WriteLine  ( _i [ _ui - 1 ]);
-					break;
-
-
-				}
-
-						case 2:
-						{
-							Console.Write ("Втори елемент в масива: ");
-					Console.WriteLine  ( _i [ _ui - 1 ]);
-								break;
-
-
-								}
-
-								case 3:
-								{
-									Console.Write ("Трети елемент в масива: ");
-					Console.WriteLine  ( _i [ _ui - 1 ]);
-										break;
-
-
-										}
-
-										default:
-										{
-											Console.Write ("В масива няма стойност за този индекс. \nОпитайте с индекс между 1 и 3.\n\n");
-					Console.WriteLine  ( _i [ _ui - 1 ]);
-												break;
-
-
-												}
+//			// Използване на switch
+//
+//			switch ( _ui ) {
+//
+//			case 1:
+//				{
+//					Console.Write ("Първи елемент в масива: ");
+//					Console.WriteLine  ( _i [ _ui - 1 ]);
+//					break;
+//
+//
+//				}
+//
+//						case 2:
+//						{
+//							Console.Write ("Втори елемент в масива: ");
+//					Console.WriteLine  ( _i [ _ui - 1 ]);
+//								break;
+//
+//
+//								}
+//
+//								case 3:
+//								{
+//									Console.Write ("Трети елемент в масива: ");
+//					Console.WriteLine  ( _i [ _ui - 1 ]);
+//										break;
+//
+//
+//										}
+//
+//										default:
+//										{
+//											Console.Write ("В масива няма стойност за този индекс. \nОпитайте с индекс между 1 и 3.\n\n");
+//					Console.WriteLine  ( _i [ _ui - 1 ]);
+//												break;
+//
+//
+//										}
 
 			
 
-			}
+								//}
 
 
-			if ( _check01 ) {
-				Console.WriteLine ( _i [_ui - 1 ]);
+			//if ( _check01 ) {
+				//Console.WriteLine ( _i [ _ui - 1 ]);
 			}
-		}
+	}
 	}
 }
